@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foconet Dashboard | Moderno</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <aside class="sidebar" id="sidebarDesktop">
+      <div class="sidebar-header">
+        <div class="brand">
+          <img src="foconet-white.png" alt="Foconet" class="brand-logo" />
+        </div>
+      </div>
+
+      <div class="sidebar-content">
+        <ul class="nav-menu">
+          <li>
+            <a href="dashboard.html" class="active">
+              <i class="bi bi-speedometer2"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="has-submenu collapsed-menu" data-bs-toggle="collapse" data-bs-target="#subDemandasDesktop" aria-expanded="false" aria-controls="subDemandasDesktop">
+              <i class="bi bi-file-earmark-text"></i>
+              <span>Demandas</span>
+              <i class="ri-arrow-right-s-line submenu-arrow ms-auto"></i>
+            </a>
+
+            <div class="submenu collapse" id="subDemandasDesktop">
+           <a href="grid-registros.html" class="nav-link">
+                <span class="link-text">Minhas demandas</span>
+              </a>   
+              <a href="relatorios.html" class="nav-link">
+                <span class="link-text">Relatório de demandas</span>
+              </a>
+              <a href="detalhe-demanda.html" class="nav-link">
+                <span class="link-text">Detalhes Demanda</span>
+              </a>
+              <a href="form-cadastro.html" class="nav-link">
+                <span class="link-text">Novo Cadastro</span>
+              </a>
+             
+           
+            </div>
+          </li>
+          <li>
+            <a href="gerenciar-usuarios.html">
+              <i class="bi bi-people"></i>
+              <span>Usuários</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-wallet2"></i>
+              <span>Financeiro</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-arrow-left-right"></i>
+              <span>Transações</span>
+            </a>
+          </li>
+          <li>
+             <a href="relatorios.html">
+              <i class="bi bi-bar-chart"></i>
+              <span>Relatórios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-gear"></i>
+              <span>Configurações</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-question-circle"></i>
+              <span>Suporte</span>
+            </a>
+          </li>
+                    <li>
+            <a href="LOGIN02.HTML">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="sidebar-mobile offcanvas offcanvas-start" tabindex="-1" id="sidebarMobile" aria-labelledby="sidebarMobileLabel" style="background: var(--gradient-bg-dark)">
+      <div class="offcanvas-header">
+        <div class="brand">
+          <img src="foconet-white.png" alt="Foconet" class="brand-logo" />
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-3">
+        <ul class="nav-menu">
+          <li>
+            <a href="#" class="active" data-bs-dismiss="offcanvas">
+              <i class="bi bi-speedometer2"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="has-submenu collapsed-menu" data-bs-toggle="collapse" data-bs-target="#subDemandasMobile" aria-expanded="false" aria-controls="subDemandasMobile">
+              <i class="bi bi-file-earmark-text"></i>
+              <span>Demandas</span>
+              <i class="ri-arrow-right-s-line submenu-arrow ms-auto"></i>
+            </a>
+
+
+            
+            <div class="submenu collapse" id="subDemandasMobile">
+              <a href="grid-registros.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Minhas demandas</span>
+              </a>
+              <a href="demandas-relatorio.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Relatório de demandas</span>
+              </a>
+              <a href="detalhe-demanda.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Detalhes Demanda</span>
+              </a>
+              <a href=form-cadastro.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Novo Cadastro</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="gerenciar-usuarios.html" data-bs-dismiss="offcanvas">
+              <i class="bi bi-people"></i>
+              <span>Usuários</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-wallet2"></i>
+              <span>Financeiro</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-arrow-left-right"></i>
+              <span>Transações</span>
+            </a>
+          </li>
+          <li>
+            <a href="relatorios.html" data-bs-dismiss="offcanvas">
+              <i class="bi bi-bar-chart"></i>
+              <span>Relatórios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-gear"></i>
+              <span>Configurações</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-question-circle"></i>
+              <span>Suporte</span>
+            </a>
+          </li>
+                    <li>
+            <a href="LOGIN02.HTML" data-bs-dismiss="offcanvas">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header class="top-header d-flex align-items-center">
+        <div class="d-flex align-items-center gap-3 w-100">
+          <button class="btn btn-icon btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMobile" aria-controls="sidebarMobile">
+            <i class="ri-menu-2-line fs-5"></i>
+          </button>
+
+          <button class="btn btn-icon btn-light me-3 d-none d-lg-block" id="sidebarToggle" aria-label="Toggle sidebar">
+            <i class="ri-menu-fold-line fs-5"></i>
+          </button>
+
+          <div class="search-wrapper d-none d-md-flex align-items-center gap-2">
+            <i class="ri-search-line text-muted"></i>
+            <input type="text" placeholder="Buscar serviço, morador ou documento..." id="searchInput" />
+          </div>
+
+          <div class="ms-auto d-flex align-items-center gap-3">
+            <div class="dropdown">
+              <button class="btn btn-icon btn-light position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ri-notification-3-line fs-5"></i>
+                <span class="position-absolute top-0 start-75 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-3" style="min-width: 280px">
+                <li class="dropdown-header fw-bold">Notificações (3)</li>
+                <li><a class="dropdown-item rounded-2 small" href="#">Novo boleto disponível</a></li>
+                <li><a class="dropdown-item rounded-2 small" href="#">Manutenção finalizada</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item rounded-2 text-primary fw-semibold" href="#">Ver todas</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <div class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" style="cursor: pointer" aria-expanded="false">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px">EM</div>
+                <div class="d-none d-sm-block text-end">
+                  <div class="fw-bold text-main small">Elaine Medeiros</div>
+                  <div class="text-muted" style="font-size: 0.75rem">Gestor</div>
+                </div>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-3">
+                <li>
+                  <a class="dropdown-item rounded-2" href="#">
+                    <i class="ri-user-line me-2"></i>
+                    Perfil
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item rounded-2 text-danger" href="#" id="logoutLinkHeader">
+                    <i class="ri-logout-box-r-line me-2"></i>
+                    Sair
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="p-4">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+            <div>
+              <h1 class="h5 fw-bold text-main mb-1">Visão Geral</h1>
+              <p class="text-muted mb-0 small">Bem-vinda de volta, Ana! Aqui está o resumo do dia.</p>
+            </div>
+            <span class="badge bg-white text-dark border px-3 py-2 rounded-pill d-flex align-items-center gap-2">
+              <i class="ri-calendar-line text-muted"></i>
+              <span id="currentDate">22 de Dezembro de 2025</span>
+            </span>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div class="icon-box" style="background: var(--primary-light); color: var(--primary-color)">
+                    <i class="ri-file-list-3-line"></i>
+                  </div>
+                  <span class="badge rounded-pill" style="background: var(--bg-success-light); color: var(--success)">+2 novos</span>
+                </div>
+                <h3 class="fw-bold text-main mb-1">12</h3>
+                <p class="text-muted small mb-0">Demandas Abertas</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div class="icon-box" style="background: var(--bg-warning-light); color: var(--warning)">
+                    <i class="ri-barcode-line"></i>
+                  </div>
+                  <span class="badge rounded-pill" style="background: var(--bg-warning-light); color: var(--warning)">Vence hoje</span>
+                </div>
+                <h3 class="fw-bold text-main mb-1">R$ 450</h3>
+                <p class="text-muted small mb-0">Próximo Boleto</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div class="icon-box" style="background: var(--bg-success-light); color: var(--success)">
+                    <i class="ri-calendar-check-line"></i>
+                  </div>
+                </div>
+                <h3 class="fw-bold text-main mb-1">24 Out</h3>
+                <p class="text-muted small mb-0">Salão de Festas</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div class="icon-box" style="background: var(--bg-danger-light); color: var(--danger)">
+                    <i class="ri-mail-unread-line"></i>
+                  </div>
+                </div>
+                <h3 class="fw-bold text-main mb-1">3</h3>
+                <p class="text-muted small mb-0">Avisos da Portaria</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-header bg-white border-0 pt-4 px-4 d-flex justify-content-between align-items-center">
+                  <h5 class="h5 fw-bold text-main mb-0">Acesso Rápido</h5>
+                  <a href="#" class="btn btn-sm text-primary fw-semibold" style="color: var(--primary-color) !important">Ver todos</a>
+                </div>
+                <div class="card-body p-4">
+                  <div class="row g-3" id="servicesGrid">
+                    <div class="col-6 col-md-3">
+                      <div class="service-item">
+                        <div class="icon-box mx-auto mb-2 text-primary">
+                          <i class="ri-barcode-box-line"></i>
+                        </div>
+                        <span class="fw-semibold text-main small">2ª Via Boleto</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="service-item">
+                        <div class="icon-box mx-auto mb-2 text-primary">
+                          <i class="ri-file-chart-line"></i>
+                        </div>
+                        <span class="fw-semibold text-main small">Prestação</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="service-item">
+                        <div class="icon-box mx-auto mb-2 text-primary">
+                          <i class="ri-tools-line"></i>
+                        </div>
+                        <span class="fw-semibold text-main small">Manutenção</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="service-item">
+                        <div class="icon-box mx-auto mb-2 text-primary">
+                          <i class="ri-store-2-line"></i>
+                        </div>
+                        <span class="fw-semibold text-main small">Marketplace</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="service-item">
+                        <div class="icon-box mx-auto mb-2 text-primary">
+                          <i class="ri-shield-user-line"></i>
+                        </div>
+                        <span class="fw-semibold text-main small">Portaria</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="service-item">
+                        <div class="icon-box mx-auto mb-2 text-primary">
+                          <i class="ri-question-answer-line"></i>
+                        </div>
+                        <span class="fw-semibold text-main small">Fale Conosco</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-header bg-white border-0 pt-4 px-4">
+                  <h5 class="h5 fw-bold text-main mb-0">Atividades</h5>
+                </div>
+                <div class="card-body p-4">
+                  <div class="timeline-item">
+                    <div class="timeline-dot success"></div>
+                    <div class="timeline-content">
+                      <h6 class="text-main fw-semibold small mb-1">Pagamento Confirmado</h6>
+                      <p class="text-muted small mb-1">Boleto Out/2023 compensado.</p>
+                      <span class="text-muted" style="font-size: 0.75rem">20 Out</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot primary"></div>
+                    <div class="timeline-content">
+                      <h6 class="text-main fw-semibold mb-1 small">Reserva Aprovada</h6>
+                      <p class="text-muted small mb-1">Espaço Gourmet confirmado.</p>
+                      <span class="text-muted" style="font-size: 0.75rem">Ontem</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot warning"></div>
+                    <div class="timeline-content">
+                      <h6 class="text-main fw-semibold mb-1 small">Manutenção Elevador</h6>
+                      <p class="text-muted small mb-1">Agendado para 25/10.</p>
+                      <span class="text-muted" style="font-size: 0.75rem">10:30</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="app-footer d-flex flex-column flex-sm-row justify-content-between align-items-center text-muted small gap-2">
+        <span class="small">© 2026 Foconet. Todos os direitos reservados.</span>
+        <div class="d-flex gap-3 small">
+          <a href="#" class="text-decoration-none text-muted">Suporte</a>
+          <a href="#" class="text-decoration-none text-muted">Termos</a>
+          <a href="#" class="text-decoration-none text-muted">Privacidade</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script src="dashboard.js"></script>
+  </body>
+</html>

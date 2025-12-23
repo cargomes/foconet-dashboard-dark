@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foconet Dashboard | Moderno</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <aside class="sidebar" id="sidebarDesktop">
+      <div class="sidebar-header">
+        <div class="brand">
+          <img src="foconet-white.png" alt="Foconet" class="brand-logo" />
+        </div>
+      </div>
+
+      <div class="sidebar-content">
+        <ul class="nav-menu">
+          <li>
+             <a href="dashboard.html" class="active">
+              <i class="bi bi-speedometer2"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="has-submenu collapsed-menu" data-bs-toggle="collapse" data-bs-target="#subDemandasDesktop" aria-expanded="false" aria-controls="subDemandasDesktop">
+              <i class="bi bi-file-earmark-text"></i>
+              <span>Demandas</span>
+              <i class="ri-arrow-right-s-line submenu-arrow ms-auto"></i>
+            </a>
+
+            <div class="submenu collapse" id="subDemandasDesktop">
+           <a href="grid-registros.html" class="nav-link">
+                <span class="link-text">Minhas demandas</span>
+              </a>   
+              <a href="relatorios.html" class="nav-link">
+                <span class="link-text">Relatório de demandas</span>
+              </a>
+              <a href="detalhe-demanda.html" class="nav-link">
+                <span class="link-text">Detalhes Demanda</span>
+              </a>
+              <a href="form-cadastro.html" class="nav-link">
+                <span class="link-text">Novo Cadastro</span>
+              </a>
+             
+           
+            </div>
+          </li>
+          <li>
+            <a href="gerenciar-usuarios.html">
+              <i class="bi bi-people"></i>
+              <span>Usuários</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-wallet2"></i>
+              <span>Financeiro</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-arrow-left-right"></i>
+              <span>Transações</span>
+            </a>
+          </li>
+          <li>
+             <a href="relatorios.html">
+              <i class="bi bi-bar-chart"></i>
+              <span>Relatórios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-gear"></i>
+              <span>Configurações</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-question-circle"></i>
+              <span>Suporte</span>
+            </a>
+          </li>
+                    <li>
+            <a href="LOGIN02.HTML">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="sidebar-mobile offcanvas offcanvas-start" tabindex="-1" id="sidebarMobile" aria-labelledby="sidebarMobileLabel" style="background: var(--gradient-bg-dark)">
+      <div class="offcanvas-header">
+        <div class="brand">
+          <img src="foconet-white.png" alt="Foconet" class="brand-logo" />
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-3">
+        <ul class="nav-menu">
+          <li>
+            <a href="#" class="active" data-bs-dismiss="offcanvas">
+              <i class="bi bi-speedometer2"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="has-submenu collapsed-menu" data-bs-toggle="collapse" data-bs-target="#subDemandasMobile" aria-expanded="false" aria-controls="subDemandasMobile">
+              <i class="bi bi-file-earmark-text"></i>
+              <span>Demandas</span>
+              <i class="ri-arrow-right-s-line submenu-arrow ms-auto"></i>
+            </a>
+
+
+            
+            <div class="submenu collapse" id="subDemandasMobile">
+              <a href="grid-registros.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Minhas demandas</span>
+              </a>
+              <a href="demandas-relatorio.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Relatório de demandas</span>
+              </a>
+              <a href="detalhe-demanda.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Detalhes Demanda</span>
+              </a>
+              <a href=form-cadastro.html" class="nav-link" data-bs-dismiss="offcanvas">
+                <span class="link-text">Novo Cadastro</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="gerenciar-usuarios.html" data-bs-dismiss="offcanvas">
+              <i class="bi bi-people"></i>
+              <span>Usuários</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-wallet2"></i>
+              <span>Financeiro</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-arrow-left-right"></i>
+              <span>Transações</span>
+            </a>
+          </li>
+          <li>
+            <a href="relatorios.html" data-bs-dismiss="offcanvas">
+              <i class="bi bi-bar-chart"></i>
+              <span>Relatórios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-gear"></i>
+              <span>Configurações</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-dismiss="offcanvas">
+              <i class="bi bi-question-circle"></i>
+              <span>Suporte</span>
+            </a>
+          </li>
+                    <li>
+            <a href="LOGIN02.HTML" data-bs-dismiss="offcanvas">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header class="top-header d-flex align-items-center">
+        <div class="d-flex align-items-center gap-3 w-100">
+          <button class="btn btn-icon btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMobile" aria-controls="sidebarMobile">
+            <i class="ri-menu-2-line fs-5"></i>
+          </button>
+
+          <button class="btn btn-icon btn-light me-3 d-none d-lg-block" id="sidebarToggle" aria-label="Toggle sidebar">
+            <i class="ri-menu-fold-line fs-5"></i>
+          </button>
+
+          <div class="search-wrapper d-none d-md-flex align-items-center gap-2">
+            <i class="ri-search-line text-muted"></i>
+            <input type="text" placeholder="Buscar serviço, morador ou documento..." id="searchInput" />
+          </div>
+
+          <div class="ms-auto d-flex align-items-center gap-3">
+            <div class="dropdown">
+              <button class="btn btn-icon btn-light position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ri-notification-3-line fs-5"></i>
+                <span class="position-absolute top-0 start-75 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-3" style="min-width: 280px">
+                <li class="dropdown-header fw-bold">Notificações (3)</li>
+                <li><a class="dropdown-item rounded-2 small" href="#">Novo boleto disponível</a></li>
+                <li><a class="dropdown-item rounded-2 small" href="#">Manutenção finalizada</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item rounded-2 text-primary fw-semibold" href="#">Ver todas</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <div class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" style="cursor: pointer" aria-expanded="false">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px">EM</div>
+                <div class="d-none d-sm-block text-end">
+                  <div class="fw-bold text-main small">Elaine Medeiros</div>
+                  <div class="text-muted" style="font-size: 0.75rem">Gestor</div>
+                </div>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-2 rounded-3">
+                <li>
+                  <a class="dropdown-item rounded-2" href="#">
+                    <i class="ri-user-line me-2"></i>
+                    Perfil
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item rounded-2 text-danger" href="#" id="logoutLinkHeader">
+                    <i class="ri-logout-box-r-line me-2"></i>
+                    Sair
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="p-4">
+
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+            <div>
+              <h1 class="h5 fw-bold text-main mb-1">Relatórios Gerenciais</h1>
+              <p class="text-muted mb-0 small">Análise de desempenho e tendências de demandas e serviços.</p>
+            </div>
+            <div>
+            <button type="submit" class="btn btn-dark w-100">
+                        <i class="ri-bar-chart-box-line me-1"></i>
+                        Gerar
+                      </button>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-4">
+            <div class="col-12">
+              <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-body p-4">
+                  <form class="row g-3">
+                    <div class="col-md-4 col-lg-3">
+                      <label for="campoPeriodo" class="form-label fw-semibold small">Período de Análise</label>
+                      <select class="form-select" id="campoPeriodo">
+                        <option selected>Últimos 30 dias</option>
+                        <option value="1">Mês Atual</option>
+                        <option value="2">Últimos 6 meses</option>
+                        <option value="3">Ano Atual</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                      <label for="campoCategoria" class="form-label fw-semibold small">Categoria de Serviço</label>
+                      <select class="form-select" id="campoCategoria">
+                        <option selected>Todas</option>
+                        <option value="1">Hidráulica</option>
+                        <option value="2">Elétrica</option>
+                        <option value="3">Limpeza</option>
+                      </select>
+                    </div>
+         
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <p class="text-muted small mb-1">Total de Demandas Abertas</p>
+                <h3 class="h5 fw-bold text-main mb-1">98</h3>
+                <span class="text-success small">
+                  <i class="ri-arrow-up-line"></i>
+                  5% vs. Mês Passado
+                </span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <p class="text-muted small mb-1">Tempo Médio de Resposta</p>
+                <h3 class="h5 fw-bold text-main mb-1">48h 12min</h3>
+                <span class="text-danger small">
+                  <i class="ri-arrow-down-line"></i>
+                  2% vs. Meta (Bom)
+                </span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <p class="text-muted small mb-1">Taxa de Finalização no Prazo</p>
+                <h3 class="h5 fw-bold text-main mb-1">92.5%</h3>
+                <span class="text-success small">
+                  <i class="ri-check-line"></i>
+                  Excelente
+                </span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="stat-card">
+                <p class="text-muted small mb-1">Custo Total de Manutenções</p>
+                <h3 class="h5 fw-bold text-main mb-1">R$ 12.450</h3>
+                <span class="text-muted small">Média mensal: R$ 4.150</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-header bg-white border-0 pt-4 px-4">
+                  <h5 class="h5 fw-bold text-main mb-0">Demandas Abertas vs. Fechadas (Mensal)</h5>
+                </div>
+                <div class="card-body p-4">
+                  <div class="text-center small p-5 border rounded bg-light text-muted" style="height: 300px; display: flex; align-items: center; justify-content: center">
+                    <i class="ri-bar-chart-box-line me-2 fs-4"></i>
+                    Gráfico de Barras/Linhas (JS Chart Aqui)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-header bg-white border-0 pt-4 px-4">
+                  <h5 class="h5 fw-bold text-main mb-0">Distribuição por Tipo de Serviço</h5>
+                </div>
+                <div class="card-body p-4">
+                  <div class="text-center p-5 border rounded bg-light text-muted small" style="height: 300px; display: flex; align-items: center; justify-content: center">
+                    <i class="ri-pie-chart-line me-2 fs-4"></i>
+                    Gráfico de Pizza (JS Chart Aqui)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="app-footer d-flex flex-column flex-sm-row justify-content-between align-items-center text-muted small gap-2">
+        <span class="small">© 2026 Foconet. Todos os direitos reservados.</span>
+        <div class="d-flex gap-3 small">
+          <a href="#" class="text-decoration-none text-muted">Suporte</a>
+          <a href="#" class="text-decoration-none text-muted">Termos</a>
+          <a href="#" class="text-decoration-none text-muted">Privacidade</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
